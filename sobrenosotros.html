@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerixaDAB - Sobre Nosotros</title>
+    <title>Sobre Nosotros - VerixaDAB</title>
     <style>
-        /* Estilos globales */
         * {
             margin: 0;
             padding: 0;
@@ -35,12 +34,6 @@
             font-size: 3.5em;
         }
 
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            color: #fff;
-        }
-
         nav {
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
@@ -55,10 +48,6 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-        }
-
-        nav ul li {
-            display: inline-block;
         }
 
         nav ul li a {
@@ -76,7 +65,7 @@
 
         .about-section {
             text-align: center;
-            margin: 50px 0;
+            max-width: 800px;
         }
 
         .about-section h2 {
@@ -87,39 +76,22 @@
 
         .about-section p {
             font-size: 1.2em;
-            line-height: 1.6;
-            color: #ccc;
-            max-width: 900px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-        }
-
-        .about-section ul {
-            text-align: left;
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.1em;
-            color: #fff;
-        }
-
-        .about-section ul li {
             margin-bottom: 15px;
         }
 
-        .contact-section {
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        .contact-section h3 {
-            font-size: 2em;
-            color: #f39c12;
-            margin-bottom: 20px;
-        }
-
-        .contact-section p {
+        .contact {
+            margin-top: 30px;
             font-size: 1.2em;
-            color: #ccc;
+        }
+
+        .contact a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -128,64 +100,35 @@
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             padding: 10px 0;
-            color: #fff;
             text-align: center;
-            font-size: 0.9em;
-        }
-
-        footer a {
-            color: #f39c12;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div id="top"></div> <!-- Este es el "inicio" de la página -->
-
     <header>
-        <h1><a href="#top">VerixaDAB</a></h1> <!-- Enlace para regresar al inicio -->
-        <p>Explora y disfruta las emisoras de DAB de todo el mundo.</p>
+        <h1><a href="index.html">VerixaDAB</a></h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
         </ul>
     </nav>
 
-    <div class="about-section" id="about">
-        <h2>Sobre VerixaDAB</h2>
-        <p>VerixaDAB es una plataforma de radio en línea que te permite explorar emisoras de todo el mundo a través de frecuencias DAB (Digital Audio Broadcasting). Ofrecemos una experiencia única con emisoras recomendadas, secciones dedicadas a cada frecuencia y una interfaz moderna para que puedas disfrutar de tus estaciones favoritas sin complicaciones.</p>
+    <div class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <p>VerixaDAB es una plataforma innovadora dedicada a la transmisión de radio digital a través de DAB. Nuestro objetivo es ofrecer la mejor experiencia auditiva con una amplia variedad de emisoras y una calidad de sonido superior.</p>
+        <p>Con VerixaDAB, exploramos nuevas tecnologías para mejorar la accesibilidad y la experiencia de nuestros oyentes, asegurando siempre la mejor conectividad y disponibilidad.</p>
+        <p>Nos comprometemos a expandir el alcance de la radio digital, permitiendo que más personas disfruten de un sonido claro y estable sin interferencias.</p>
+    </div>
 
-        <h3>¿Qué ofrecemos?</h3>
-        <ul>
-            <li><strong>Acceso a emisoras globales:</strong> Escucha estaciones de diferentes países y géneros.</li>
-            <li><strong>Interfaz amigable:</strong> Navega de manera sencilla por nuestras categorías de frecuencias DAB.</li>
-            <li><strong>Frecuencias detalladas:</strong> Cada frecuencia tiene emisoras únicas asociadas que puedes explorar.</li>
-            <li><strong>Recomendaciones personalizadas:</strong> Basado en tu historial de escucha, te sugerimos emisoras que podrían gustarte.</li>
-        </ul>
-        
-        <h3>¿Cómo funciona?</h3>
-        <p>VerixaDAB funciona a través de frecuencias DAB, donde cada frecuencia tiene varias emisoras asociadas. Puedes navegar entre las frecuencias y explorar las emisoras de tu interés, reproducirlas en tiempo real y disfrutar de contenido de calidad. Nuestro sistema es sencillo y accesible desde cualquier dispositivo.</p>
-
-        <h3>Únete a nuestra comunidad</h3>
-        <p>Si deseas obtener más información, recibir actualizaciones o ser parte de nuestra comunidad, no dudes en ponerte en contacto con nosotros. ¡Te esperamos!</p>
-
-        <h3>Contacto</h3>
-        <p>Para cualquier consulta o sugerencia, puedes escribirnos a:</p>
-        <p><a href="mailto:verixaaaa@gmail.com" style="color: #f39c12; text-decoration: none; font-weight: bold;">verixaaaa@gmail.com</a></p>
+    <div class="contact">
+        <p>Contacto: <a href="mailto:verixaaaa@gmail.com">verixaaaa@gmail.com</a></p>
     </div>
 
     <footer>
         <p>© 2025 VerixaDAB | Desarrollado por <strong>VerixaStream</strong></p>
     </footer>
-
 </body>
 </html>
