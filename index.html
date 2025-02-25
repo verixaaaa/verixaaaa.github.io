@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerixaDAB - Inicio</title>
+    <title>VerixaDAB</title>
     <style>
         * {
             margin: 0;
@@ -32,167 +32,239 @@
             text-decoration: none;
             color: #f39c12;
             font-size: 3.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
         }
 
-        nav {
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px 0;
-            margin-bottom: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        header h1 a:hover {
+            color: #f1c40f;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.1em;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #f39c12;
-        }
-
-        .frequencies {
+        .player-container {
+            margin-top: 30px;
             text-align: center;
-            margin: 50px 0;
-        }
-
-        .frequencies h2 {
-            font-size: 2.5em;
-            color: #f39c12;
-            margin-bottom: 20px;
-        }
-
-        .frequencies ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 15px;
-            list-style: none;
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .frequencies ul li {
             background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .frequencies ul li:hover {
-            transform: scale(1.1);
-        }
-
-        .frequencies ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-
-        .recommendations {
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        .recommendations h2 {
-            font-size: 2.5em;
-            color: #f39c12;
-            margin-bottom: 20px;
-        }
-
-        .recommendations ul {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            list-style: none;
-            padding: 0;
-        }
-
-        .recommendations ul li {
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
             padding: 20px;
-            width: 200px;
-            transition: transform 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .recommendations ul li:hover {
-            transform: scale(1.1);
+        .player-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
         }
 
-        .recommendations ul li a {
+        .player-container select, .player-container button {
+            margin-top: 10px;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .player-container select {
+            background-color: #34495e;
             color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-            text-align: center;
-            display: block;
+            cursor: pointer;
         }
 
-        footer {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 0;
-            text-align: center;
+        .player-container select:hover {
+            background-color: #2c3e50;
         }
+
+        .player-container button {
+            background-color: #f39c12;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .player-container button:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+
+        .loading {
+            font-size: 1.5em;
+            color: #f39c12;
+            animation: blink 1s infinite;
+        }
+
+        .info {
+            font-size: 1.5em;
+            color: #f39c12;
+            margin-top: 15px;
+            user-select: none; /* Evita que el texto sea seleccionado */
+        }
+
+        .sintonizado {
+            font-size: 1.1em;
+            color: #fff;
+            margin-top: 10px;
+            user-select: none; /* Evita que el texto sea seleccionado */
+        }
+
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1><a href="index.html">VerixaDAB</a></h1>
-        <p>Explora y disfruta las emisoras de DAB de todo el mundo.</p>
+        <h1><a href="https://verixaaaa.github.io/index.html">VerixaDAB</a></h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="https://verixaaaa.github.io/sobrenosotros.html">Sobre Nosotros</a></li>
-        </ul>
-    </nav>
-
-    <div class="recommendations">
-        <h2>Emisoras Recomendadas</h2>
-        <ul>
-            <li><a href="#">Emisora 1</a></li>
-            <li><a href="#">Emisora 2</a></li>
-            <li><a href="#">Emisora 3</a></li>
-            <li><a href="#">Emisora 4</a></li>
-            <li><a href="#">Emisora 5</a></li>
-        </ul>
+    <div class="player-container">
+        <h2>Selecciona una Frecuencia DAB</h2>
+        <select id="frequencySelect" onchange="startTuning()">
+            <option value="5A">5A</option>
+            <option value="5B">5B</option>
+            <option value="5C">5C</option>
+            <option value="5D">5D</option>
+            <option value="6A">6A</option>
+            <option value="6B">6B</option>
+            <option value="6C">6C</option>
+            <option value="6D">6D</option>
+            <option value="7A">7A</option>
+            <option value="7B">7B</option>
+            <option value="7C">7C</option>
+            <option value="7D">7D</option>
+            <option value="8A">8A</option>
+            <option value="8B">8B</option>
+            <option value="8C">8C</option>
+            <option value="8D">8D</option>
+            <option value="9A">9A</option>
+            <option value="9B">9B</option>
+            <option value="9C">9C</option>
+            <option value="9D">9D</option>
+            <option value="10A">10A</option>
+            <option value="10B">10B</option>
+            <option value="10C">10C</option>
+            <option value="10D">10D</option>
+            <option value="11A">11A</option>
+            <option value="11B">11B</option>
+            <option value="11C">11C</option>
+            <option value="11D">11D</option>
+            <option value="12A">12A</option>
+            <option value="12B">12B</option>
+            <option value="12C">12C</option>
+            <option value="12D">12D</option>
+            <option value="13A">13A</option>
+            <option value="13B">13B</option>
+            <option value="13C">13C</option>
+            <option value="13D">13D</option>
+            <option value="13E">13E</option>
+            <option value="13F">13F</option>
+        </select>
+        <button onclick="startTuning()">Sintonizar</button>
+        <div id="loading" class="loading" style="display: none;">Sintonizando...</div>
+        <div id="sintonizado" class="sintonizado" style="display: none;">Sintonizado</div>
+        <div id="frequencyInfo" class="info"></div>
     </div>
 
-    <div class="frequencies">
-        <h2>Frecuencias DAB</h2>
-        <ul>
-            <script>
-                let frequencies = [];
-                ['A', 'B', 'C', 'D', 'E', 'F'].forEach(letter => {
-                    for (let i = 5; i <= 13; i++) {
-                        if (i === 13 && ['E', 'F'].includes(letter)) continue;
-                        frequencies.push(`${i}${letter}`);
-                    }
-                });
-                document.write(frequencies.map(freq => `<li><a href="#">${freq}</a></li>`).join(''));
-            </script>
-        </ul>
-    </div>
+    <script>
+        function startTuning() {
+            const loading = document.getElementById("loading");
+            const frequency = document.getElementById("frequencySelect").value;
+            const frequencyInfo = document.getElementById("frequencyInfo");
+            const sintonizado = document.getElementById("sintonizado");
 
-    <footer>
-        <p>© 2025 VerixaDAB | Desarrollado por <strong>VerixaStream</strong></p>
-    </footer>
+            // Show "Sintonizando..." when the button is clicked
+            loading.style.display = "block";
+            frequencyInfo.textContent = ''; // Clear previous info
+            sintonizado.style.display = "none"; // Hide "Sintonizado" message initially
+
+            setTimeout(() => {
+                loading.style.display = "none"; // Hide "Sintonizando..." after 2 seconds
+
+                if (frequency === "5A") {
+                    frequencyInfo.textContent = "DAB - Verixa MA - MADRID / BA - BARCELONA";
+                } else if (frequency === "5B") {
+                    frequencyInfo.textContent = "DAB - Verixa SE - SEVILLA / VA - VALENCIA";
+                } else if (frequency === "5C") {
+                    frequencyInfo.textContent = "DAB - Verixa AL - ALMERÍA / MA - MÁLAGA";
+                } else if (frequency === "5D") {
+                    frequencyInfo.textContent = "DAB - Verixa GR - GRANADA / TO - TARRAGONA";
+                } else if (frequency === "6A") {
+                    frequencyInfo.textContent = "DAB - Verixa GI - GIRONA / LU - LUGO";
+                } else if (frequency === "6B") {
+                    frequencyInfo.textContent = "DAB - Verixa SA - SALAMANCA / LE - LEÓN";
+                } else if (frequency === "6C") {
+                    frequencyInfo.textContent = "DAB - Verixa OV - OVIEDO / HU - HUESCA";
+                } else if (frequency === "6D") {
+                    frequencyInfo.textContent = "DAB - Verixa GI - GIPUZKOA / ZO - ZORROZA";
+                } else if (frequency === "7A") {
+                    frequencyInfo.textContent = "DAB - Verixa BI - BILBAO / NA - NAVARRA";
+                } else if (frequency === "7B") {
+                    frequencyInfo.textContent = "DAB - Verixa GI - GIPUZKOA / LE - LEÓN";
+                } else if (frequency === "7C") {
+                    frequencyInfo.textContent = "DAB - Verixa CO - CÓRDOBA / HU - HUELVA";
+                } else if (frequency === "7D") {
+                    frequencyInfo.textContent = "DAB - Verixa AL - ALBACETE / TO - TOLEDO";
+                } else if (frequency === "8A") {
+                    frequencyInfo.textContent = "DAB - Verixa PA - PALENCIA / MU - MURCIA";
+                } else if (frequency === "8B") {
+                    frequencyInfo.textContent = "DAB - Verixa BA - BADAJOZ / SA - SORIA";
+                } else if (frequency === "8C") {
+                    frequencyInfo.textContent = "DAB - Verixa AV - ÁVILA / BI - BURGOS";
+                } else if (frequency === "8D") {
+                    frequencyInfo.textContent = "DAB - Verixa TO - TOLEDO / GI - GIPUZKOA";
+                } else if (frequency === "9A") {
+                    frequencyInfo.textContent = "DAB - Verixa SE - SEVILLA / MA - MÁLAGA";
+                } else if (frequency === "9B") {
+                    frequencyInfo.textContent = "DAB - Verixa HU - HUELVA / ZO - ZARAGOZA";
+                } else if (frequency === "9C") {
+                    frequencyInfo.textContent = "DAB - Verixa TO - TENERIFE / AL - ALMERÍA";
+                } else if (frequency === "9D") {
+                    frequencyInfo.textContent = "DAB - Verixa BU - BURGOS / AL - ALICANTE";
+                } else if (frequency === "10A") {
+                    frequencyInfo.textContent = "DAB - Verixa GI - GIPUZKOA / BA - BARCELONA";
+                } else if (frequency === "10B") {
+                    frequencyInfo.textContent = "DAB - Verixa AL - ALMERÍA / SE - SEVILLA";
+                } else if (frequency === "10C") {
+                    frequencyInfo.textContent = "DAB - Verixa LI - LLEIDA / OV - OVIEDO";
+                } else if (frequency === "10D") {
+                    frequencyInfo.textContent = "DAB - Verixa NA - NAVARRA / GI - GRANADA";
+                } else if (frequency === "11A") {
+                    frequencyInfo.textContent = "DAB - Verixa VA - VALLADOLID / GR - GRANADA";
+                } else if (frequency === "11B") {
+                    frequencyInfo.textContent = "DAB - Verixa SA - SALAMANCA / BI - BILBAO";
+                } else if (frequency === "11C") {
+                    frequencyInfo.textContent = "DAB - Verixa TO - TOLEDO / LE - LEÓN";
+                } else if (frequency === "11D") {
+                    frequencyInfo.textContent = "DAB - Verixa CO - CÓRDOBA / SE - SEVILLA";
+                } else if (frequency === "12A") {
+                    frequencyInfo.textContent = "DAB - Verixa LA - LUGO / MA - MADRID";
+                } else if (frequency === "12B") {
+                    frequencyInfo.textContent = "DAB - Verixa AV - ÁVILA / TO - TOLEDO";
+                } else if (frequency === "12C") {
+                    frequencyInfo.textContent = "DAB - Verixa LI - LLEIDA / MU - MURCIA";
+                } else if (frequency === "12D") {
+                    frequencyInfo.textContent = "DAB - Verixa AL - ALICANTE / HUE - HUELVA";
+                } else if (frequency === "13A") {
+                    frequencyInfo.textContent = "DAB - Verixa BA - BADAJOZ / LE - LEÓN";
+                } else if (frequency === "13B") {
+                    frequencyInfo.textContent = "DAB - Verixa ZA - ZAMORA / AL - ALBACETE";
+                } else if (frequency === "13C") {
+                    frequencyInfo.textContent = "DAB - Verixa MA - MÁLAGA / CO - CÓRDOBA";
+                } else if (frequency === "13D") {
+                    frequencyInfo.textContent = "DAB - Verixa SA - SORIA / GI - GIRONA";
+                } else if (frequency === "13E") {
+                    frequencyInfo.textContent = "DAB - Verixa AL - ALMERÍA / SE - SEVILLA";
+                } else if (frequency === "13F") {
+                    frequencyInfo.textContent = "DAB - Verixa TO - TARRAGONA / MU - MURCIA";
+                }
+
+                sintonizado.style.display = "block"; // Show "Sintonizado" message after tuning
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
